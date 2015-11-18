@@ -8,6 +8,8 @@ using System.Xml.Serialization;
 
 namespace ObservableCollectionDemo
 {
+
+
     [Serializable()]
     [XmlType("account")]
     public class Account
