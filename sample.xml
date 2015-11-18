@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<projectModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+  <accounts>
+	<account name="test account" enable="true" key="1">  </account> 
+	<account name="test account2" enable="true" key="2">  </account> 
+	<account name="test account3" enable="true" key="3">  </account> 
+	<account name="test account4" enable="true" key="4">  </account> 
+  </accounts>
+</projectModel>
