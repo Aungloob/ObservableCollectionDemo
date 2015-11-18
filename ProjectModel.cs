@@ -24,18 +24,13 @@ namespace ObservableCollectionDemo
 
         public static ProjectModel Load(string path, out ProjectModel project)
         {
-
             project = null;
-
             try
-            {                
-                Type[] extendedTypes = new Type[] { typeof(Account), typeof(Accounts) };
-
+            {   
                 Stream stream = File.Open(path, FileMode.Open);
-                XmlSerializer xs = new XmlSerializer(typeof(ProjectModel));
-                project = (ProjectModel)xs.Deserialize(stream);
+                XmlSerializer serializer = new XmlSerializer(typeof(ProjectModel));
+                project = (ProjectModel)serializer.Deserialize(stream);
                 stream.Close();
-               
             }
             catch (Exception ex)
             {
